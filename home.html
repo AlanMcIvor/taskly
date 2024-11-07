@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Taskly</title>
+  </head>
+  <body class="container">
+    <header class="home_header">
+      <div>
+        <img class="avatar" src="assets/temp_av.png" alt="User image" />
+      </div>
+      <div class="username">
+        <h2>Hi, <span>Jane</span></h2>
+      </div>
+      <div class="menu">
+        <i class="fa-solid fa-bars fa-2xl"></i>
+      </div>
+    </header>
+    <main>
+      <div class="box_container">
+        <div class="box box1">
+          <div class="box_text">
+            <i class="fa-regular fa-clock box_icon fa-xl"></i
+            ><span>On Going</span>
+          </div>
+          <div class="box_count">24 Tasks</div>
+        </div>
+        <div class="box box2">
+          <div class="box_text">
+            <i class="fa-solid fa-spinner box_icon fa-xl"></i
+            ><span>In Progress</span>
+          </div>
+          <div class="box_count">24 Tasks</div>
+        </div>
+        <div class="box box3">
+          <div class="box_text">
+            <i class="fa-regular fa-circle-check box_icon fa-xl"></i
+            ><span>Completed</span>
+          </div>
+          <div class="box_count">24 Tasks</div>
+        </div>
+        <div class="box box4">
+          <div class="box_text">
+            <i class="fa-regular fa-circle-xmark box_icon fa-xl"></i
+            ><span>Cancelled</span>
+          </div>
+          <div class="box_count">24 Tasks</div>
+        </div>
+      </div>
+
+      <div class="todays_tasks_container">
+        <div class="todays_tasks_title">
+          <h2>Todays Tasks</h2>
+          <i class="fa-solid fa-calendar-days fa-xl todays_tasks_icon"></i>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
