@@ -15,6 +15,8 @@
   --task_complete: #53c2c5;
   --task_cancelled: #f26e56;
 
+  --task_list: #f1f1f1;
+
   /* fonts */
   --h1: 2.25em;
   --h2: 1.2em;
@@ -38,9 +40,8 @@
 body {
   font-family: "Poppins", sans-serif;
   max-width: 400px;
-  min-height: 100dvh;
+  height: 100dvh;
   margin: 0 auto;
-  border: 1px solid grey;
 }
 
 img {
@@ -263,4 +264,98 @@ span {
 
 .todays_tasks_icon {
   color: var(--sub_txt);
+}
+
+.todays_task_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.task_container {
+  display: flex;
+  justify-content: space-around;
+  width: 77%;
+  background-color: var(--task_list);
+  padding: 10px 5px;
+  border-left: 2px solid var(--task_in_progress);
+  -webkit-box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 5px -4px rgba(0, 0, 0, 0.75);
+}
+
+.task_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.task_btns {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.task_clock {
+  margin-right: 5px;
+}
+
+.complete_btn,
+.delete_btn {
+  border-radius: 50%;
+  padding: 2.5px 5.5px;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+.complete_btn:hover,
+.delete_btn:hover {
+  transform: translatey(1px);
+}
+
+.complete_btn {
+  background-color: var(--task_complete);
+}
+
+.delete_btn {
+  background-color: var(--task_cancelled);
+}
+
+.footer_container {
+  position: fixed;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 72px;
+  background-color: var(--accent);
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+}
+
+.footer_container i {
+  color: white;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+.footer_container i:hover {
+  transform: translatey(1px);
+}
+
+.add_task {
+  position: relative;
+  background-color: var(--task_complete);
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.add_task:hover {
+  scale: 1.1;
 }
